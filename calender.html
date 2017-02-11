@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/calender.css">
+	<title>CALENDER</title>
+</head>
+<body>
+<br>
+<div id="nav">
+<i class="fa fa-caret-left" id="prev" aria-hidden="true"></i>
+<input type="text" id="textBox" name="textArea">
+<i class="fa fa-caret-right" id="next" aria-hidden="true"></i>
+</div>
+<div id="cali"></div>
+ <script type="text/javascript" src="js/calender.js"></script>
+  <script type="text/javascript">
+    function onBodyLoad() {
+      cal.init("cali","prev","next","textBox");
+    };
+    window.addEventListener('load', onBodyLoad);
+  </script>
+</body>
+</html>
